@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "firbase-github-apis",
+      "public": "dist/firbase-github-apis",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

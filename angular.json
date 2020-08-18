@@ -117,8 +117,16 @@
               "devServerTarget": "firbase-github-apis:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "firbase-github-apis"
+    }
+  },
+  "defaultProject": "firbase-github-apis",
+  "cli": {
+    "analytics": false
+  }
 }

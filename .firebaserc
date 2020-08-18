@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "github-firbase-apis": {
+      "hosting": {
+        "firbase-github-apis": [
+          "github-firbase-apis"
+        ]
+      }
+    }
+  }
+}

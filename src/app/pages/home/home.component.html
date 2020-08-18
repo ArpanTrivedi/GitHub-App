@@ -1,0 +1,24 @@
+<div class="container">
+  <form (ngSubmit)="findUser()" class="form-inline mt-4 d-flex justify-content-center">
+    <div class="form-group">
+      <label for="userName">GitHub User Name</label>
+      <input [(ngModel)]="userName" name="userName" type="text" id="userName" class="form-control mx-sm-3">
+    </div>
+    <button type="submit" class="btn btn-primary">Find User</button>
+  </form>
+
+  <div *ngIf="error" class="alter alter-danger m-5" role="alter">{{error}}</div>
+
+  <div class="row mt-3 mb-3">
+
+    <div class="col col-md-4">
+      <app-usercard *ngIf="user" [user]="user"></app-usercard>
+    </div>
+
+    <div class="col col-md-8">
+      <app-repos *ngIf="user" [repoUrl]="repoUrl"></app-repos>
+    </div>
+
+  </div>
+
+</div>

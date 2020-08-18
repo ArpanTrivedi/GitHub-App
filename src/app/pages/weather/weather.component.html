@@ -1,0 +1,27 @@
+<div class="container mb-2">
+  <form class="form-inline mt-4 d-flex justify-content-center">
+    <div class="form-group">
+      <label for="userName">City Name</label>
+      <input [(ngModel)]="city" name="city" type="text" id="city" class="form-control mx-sm-3">
+    </div>
+    <button (click)="resultOfThatCity()" type="submit" class="btn btn-primary">Find Weather</button>
+  </form>
+  <div *ngIf="details" class="mt-2 text-center text-dark card user-card">
+  <div class="card-header bg-dark text-white">{{city}}'s Current weather details</div>
+    <div class="card-body">
+      <h2 class="text-success card-text">City Coordinates:-
+        lon:<span class="text-success">{{details?.coord?.lon}}</span>,
+        lat:<span class="text-success">{{details?.coord?.lat}}</span>
+      </h2>
+      <h2 class="text-success card-text">
+        Weather details:-
+        <span class="text-success">{{details?.weather[0]?.main}}</span>,<br/>Description:
+        <span class="text-success">{{details?.weather[0]?.description}}</span>
+      </h2>
+      <h2 class="text-success card-text">
+        Humidity :
+        <span class="text-success">{{details?.main?.humidity}}</span>
+      </h2>
+    </div>
+  </div>
+</div>
