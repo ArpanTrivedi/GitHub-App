@@ -9,7 +9,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## Description
 
 This site daily monitor the covid .Number of deaths in every country in the World.
-for all countries `\https://api.github.com/users/` now append it with your github name  and also see this [Openweathermap api](https://openweathermap.org/api). and also visit [Firebase](https://firebase.google.com/)
+for all countries `https://api.github.com/users/` now append it with your github name  and also see this [Openweathermap api](https://openweathermap.org/api). and also visit [Firebase](https://firebase.google.com/)
 
 ## Further help
 
